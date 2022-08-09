@@ -1,0 +1,41 @@
+@use "./properties";
+
+
+
+.storyBorder{
+    padding:2px;
+    background:linear-gradient(
+        200deg,
+        properties.$gradient-one 25%,
+        properties.$gradient-two 50%,
+        properties.$gradient-three 75%,
+        properties.$gradient-four 100%
+    );
+
+    border-radius: 100%;
+}
+
+.profileIcon{
+    border-radius: 50%;
+    border:2px solid properties.$background-white;
+    display:block;
+
+    &:hover{
+        cursor:pointer;
+    }
+
+    &.small{
+       width:25px;
+       height:25px; 
+    }
+
+    &.medium{
+        width:35px;
+        height:35px; 
+     }
+
+     &.large{
+        width:60px;
+        height:60px; 
+     }
+}
